@@ -1,0 +1,40 @@
+﻿@page
+@model Upwork.Pages.TestModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+    <h1>Gdrive Integration Test</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <table class="table table-striped border">
+            <tbody>
+                <tr>
+                    <th>
+                        Enter Folder Name:
+                    </th>
+                    <td>
+                        <input type="text" id="txtFolderName" name="txtFolderName" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select File:</th>
+                    <td>
+                        <input type="file" id="flUp" name="fpUp" class="form-control-file" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" class="btn btn-primary" value="Submit" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
